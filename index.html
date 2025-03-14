@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+    <!-- DaisyUI and Tailwind CSS cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Font awesome kit -->
+    <script src="https://kit.fontawesome.com/9a2690126f.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font-sora {
+            font-family: "Sora", sans-serif;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="font-sora">
+    <header class="border-b-2 border-green-600 md:border-none">
+        <nav class="relative flex flex-col sm:flex-row sm:justify-between sm:items-center max-w-screen-lg mx-auto py-4 px-2">
+            <!-- nav logo -->
+            <div>
+                <img src="c2-assets/logo-header.png" alt="">
+            </div>
+            <!-- nav menu -->
+            <input class="peer hidden" type="checkbox" id="navbar-open">
+            <label for="navbar-open"
+                class="cursor-pointer sm:hidden absolute right-0 mt-2 text-3xl mr-2 text-green-700">
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </label>
+            <div class="peer-checked:block hidden sm:block mt-5 sm:mt-0">
+                <ul class="flex flex-col gap-y-4 sm:flex-row items-center sm:gap-x-8">
+                    <li><a class="text-black hover:text-green-600" href="#">Product</a></li>
+                    <li><a class="text-black hover:text-green-600" href="#">Services</a></li>
+                    <li><a class="text-black hover:text-green-600" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- button -->
+            <div class="hidden sm:block space-x-3">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <button class=" btn btn-outline border-green-600">Login</button>
+                <button class="text-white btn btn-success">Register</button>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
