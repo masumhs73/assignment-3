@@ -27,6 +27,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'color-primary': '#179800',
                     }
                 }
             }
@@ -36,8 +37,9 @@
 </head>
 
 <body class="font-sora">
-    <header class="border-b-2 border-green-600 md:border-none">
-        <nav class="relative flex flex-col sm:flex-row sm:justify-between sm:items-center max-w-screen-lg mx-auto py-4 px-2">
+    <header class="bg-gray-50 mb-24">
+        <nav
+            class="relative flex flex-col sm:flex-row sm:justify-between sm:items-center max-w-screen-lg mx-auto py-4 px-2 mb-16 border-b-2 border-green-600 md:border-none">
             <!-- nav logo -->
             <div>
                 <img src="c2-assets/logo-header.png" alt="">
@@ -67,6 +69,16 @@
                 <button class="text-white btn btn-success">Register</button>
             </div>
         </nav>
+
+        <!-- banner section -->
+        <div class="text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-8 mx-9">Freshness <span class="text-color-primary">You Can</span> <br>
+            <span class="text-color-primary">Count</span> On, Prices You’ll Love!</h1>
+            <p class="text-xl mx-6">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            </div>
+            <div class="flex justify-center items-center relative">
+                <img class="mt-10 md:-mb-16" src="c2-assets/hero-vegetables.png" alt="">
+            </div>
     </header>
 </body>
 
