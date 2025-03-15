@@ -28,6 +28,7 @@
                     colors: {
                         clifford: '#da373d',
                         'color-primary': '#179800',
+                        'color-secondary': '#EFEBE3',
                     }
                 }
             }
@@ -37,7 +38,7 @@
 </head>
 
 <body class="font-sora">
-    <header class="bg-gray-50 mb-52">
+    <header class="bg-color-secondary mb-52">
         <nav
             class="relative flex flex-col sm:flex-row sm:justify-between sm:items-center max-w-screen-lg mx-auto  py-4 px-2 mb-16 border-b-2 border-green-600 md:border-none">
             <!-- nav logo -->
@@ -81,37 +82,39 @@
             </div>
     </header>
 
-    <main class="max-w-screen-lg mx-auto">
+    <main class="max-w-screen-lg mx-auto mb-24">
         <!-- Service section -->
-         <h2>Services</h2>
-         <div class="grid grid-cols-3 gap-5">
-            <div class="border-solid rounded-lg bg-gray-50 text-center p-6">
+         <div class="m-4">
+            <h2 class="text-2xl font-bold text-color-primary mb-4">Services</h2>
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="border-solid rounded-xl bg-color-secondary text-center p-6">
                 <div class="avatar">
-                    <div class="w-24 rounded-full">
+                    <div class="w-24 rounded-full bg-white p-5 mb-6">
                       <img src="c2-assets/service.png" />
                     </div>
                   </div>
-                  <h3>24/7 Services</h3>
+                  <h3 class="text-xl font-bold mb-4">24/7 Services</h3>
                   <p>Services are available 24 hours a day, 7 days a week, without interruption. Customers can access the service or receive support at any time of the day or night, regardless of holidays or weekends</p>
              </div>
-            <div class="border-solid rounded-lg bg-gray-50 text-center">
+            <div class="border-solid rounded-xl bg-color-secondary text-center p-6">
                 <div class="avatar">
-                    <div class="w-24 rounded-full">
-                      <img src="c2-assets/service.png" />
+                    <div class="w-24 rounded-full bg-white p-5 mb-6">
+                      <img src="c2-assets/delivery.png" />
                     </div>
                   </div>
-                  <h3>24/7 Services</h3>
+                  <h3 class="text-xl font-bold mb-4">24/7 Services</h3>
                   <p>Services are available 24 hours a day, 7 days a week, without interruption. Customers can access the service or receive support at any time of the day or night, regardless of holidays or weekends</p>
              </div>
-            <div class="border-solid rounded-lg bg-gray-50 text-center">
+            <div class="border-solid rounded-xl bg-color-secondary text-center p-6">
                 <div class="avatar">
-                    <div class="w-24 rounded-full">
-                      <img src="c2-assets/service.png" />
+                    <div class="w-24 rounded-full bg-white p-5 mb-6">
+                      <img src="c2-assets/healthy.png" />
                     </div>
                   </div>
-                  <h3>24/7 Services</h3>
+                  <h3 class="text-xl font-bold mb-4">24/7 Services</h3>
                   <p>Services are available 24 hours a day, 7 days a week, without interruption. Customers can access the service or receive support at any time of the day or night, regardless of holidays or weekends</p>
              </div>
+         </div>
          </div>
     </main>
 </body>
